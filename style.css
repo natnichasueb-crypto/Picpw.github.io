@@ -1,461 +1,345 @@
-/* =================================
 
-   1. ตั้งค่าพื้นฐานของเว็บไซต์
+/* ==============================
+   PORTFOLIO - NATTANICHA SUEP
+   THEME: PINK & GOLD
+================================ */
 
-================================= */
-
+/* ตั้งค่าพื้นฐาน */
 * {
-
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-
-    font-family: Arial, sans-serif;
-
+    font-family: "Sarabun", "Tahoma", sans-serif;
+    background: #fff5f8;
+    color: #444;
     line-height: 1.8;
-
-    margin: 0;
-
-    padding: 0;
-
-    background-color: #FFF0F6;
-
-    color: #263238;
-
 }
 
-/* =================================
+/* ==============================
+   รูปภาพโปรไฟล์ 2 คน
+================================ */
 
-   2. ส่วนหัวเว็บไซต์
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    max-width: 550px;
+    margin: 35px auto;
+    padding: 15px;
+    flex-wrap: nowrap;
+}
 
-================================= */
+.profile-item {
+    width: 45%;
+    max-width: 220px;
+    text-align: center;
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(180, 100, 130, 0.12);
+    border: 1px solid #f0d4df;
+}
+
+.profile-item img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 2px solid #d8b477;
+}
+
+.profile-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #75465a;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* ==============================
+   ส่วนหัวเว็บไซต์
+================================ */
 
 header {
+    background: linear-gradient(
+        135deg,
+        #eab7ca,
+        #f8dce6,
+        #d8b477
+    );
 
-    background: linear-gradient(135deg, #E84393, #FF9FCB);
-
-    color: white;
-
+    color: #684153;
     text-align: center;
-
-    padding: 55px 20px;
-
-    border-bottom: 5px solid #FFC2DC;
-
+    padding: 65px 20px;
+    border-radius: 0 0 35px 35px;
+    box-shadow: 0 5px 18px rgba(150, 90, 110, 0.15);
 }
 
 header h1 {
-
-    font-size: 42px;
-
-    letter-spacing: 4px;
-
-    margin: 0;
-
-    color: white;
-
+    font-size: 48px;
+    letter-spacing: 5px;
+    font-weight: bold;
 }
 
 header h2 {
-
-    font-size: 27px;
-
-    margin: 5px 0;
-
-    color: white;
-
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin: 10px 0;
 }
 
 header p {
-
-    font-size: 17px;
-
-    margin-top: 10px;
-
-    color: white;
-
+    font-size: 16px;
+    margin-top: 8px;
 }
 
-/* =================================
-
-   3. กล่องเนื้อหาแต่ละส่วน
-
-================================= */
+/* ==============================
+   ส่วนเนื้อหาทั่วไป
+================================ */
 
 section {
-
-    background-color: white;
-
-    max-width: 1000px;
-
-    width: 90%;
-
-    margin: 30px auto;
-
+    max-width: 950px;
+    margin: 35px auto;
     padding: 30px;
-
-    border-radius: 16px;
-
-    box-shadow: 0 5px 18px rgba(214, 51, 132, 0.10);
-
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(150, 90, 110, 0.08);
+    border: 1px solid #f1dce4;
 }
-
-/* =================================
-
-   4. หัวข้อหลัก
-
-   เช่น ประวัติส่วนตัว ประวัติการศึกษา
-
-   กิจกรรม ความสามารถ และเป้าหมาย
-
-================================= */
 
 section h2 {
-
-    color: #D63384;
-
-    font-size: 25px;
-
-    border-left: 5px solid #F062A5;
-
-    padding-left: 12px;
-
-    margin-top: 0;
-
-    font-weight: bold;
-
+    color: #a65e7b;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #d8b477;
 }
 
-/* =================================
+/* ==============================
+   รูปประวัติส่วนตัว
+================================ */
 
-   5. หัวข้อย่อย
-
-   เช่น ชื่อกิจกรรมและหัวข้อข้อมูล
-
-================================= */
-
-section h3 {
-
-    color: #E879AC;
-
-    font-size: 19px;
-
-    font-weight: bold;
-
-    margin-bottom: 10px;
-
+.profile-img {
+    display: block;
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #d8b477;
+    margin: 0 auto 20px;
 }
 
-/* =================================
-
-   6. ข้อความอธิบาย
-
-   กำหนดให้เป็นสีดำ
-
-================================= */
-
-section p {
-
-    color: #263238;
-
+/* ข้อความประวัติ */
+#about p {
+    padding: 5px 10px;
     font-size: 16px;
-
 }
 
-section li {
-
-    color: #263238;
-
-    font-size: 16px;
-
-}
-
-section strong {
-
-    color: #263238;
-
-}
-
-/* =================================
-
-   7. การ์ดกิจกรรมและผลงาน
-
-================================= */
+/* ==============================
+   ประวัติการศึกษา
+================================ */
 
 .card {
-
-    background-color: #FFF7FA;
-
-    padding: 20px;
-
+    background: #fff7fa;
+    padding: 22px;
     margin: 18px 0;
-
-    border-radius: 12px;
-
-    border: 1px solid #F8D5E5;
-
+    border-radius: 15px;
+    border-left: 5px solid #d8b477;
+    box-shadow: 0 3px 10px rgba(150, 90, 110, 0.07);
     transition: 0.3s;
-
 }
 
 .card:hover {
-
     transform: translateY(-3px);
-
-    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.12);
-
+    box-shadow: 0 6px 15px rgba(150, 90, 110, 0.13);
 }
-
-/* ชื่อกิจกรรม */
 
 .card h3 {
-
-    color: #E879AC;
-
+    color: #a65e7b;
     font-size: 19px;
-
-    font-weight: bold;
-
+    margin-bottom: 10px;
 }
-
-/* คำอธิบายกิจกรรม */
 
 .card p {
-
-    color: #263238;
-
-    font-size: 16px;
-
+    font-size: 15px;
+    margin: 5px 0;
 }
 
-/* =================================
+/* ==============================
+   กิจกรรมและประสบการณ์
+================================ */
 
-   8. รูปภาพในเว็บไซต์
-
-================================= */
-
-img {
-
-    display: block;
-
-    max-width: 100%;
-
-    height: auto;
-
-    border-radius: 10px;
-
-    margin: 12px auto;
-
+#activities .card {
+    border-left-color: #d8b477;
 }
 
-/* =================================
+#activities .card p {
+    text-align: justify;
+}
 
-   9. รายการข้อมูล
+/* ==============================
+   ความสามารถและทักษะ
+================================ */
 
-================================= */
-
-ul {
-
+#skills ul {
     padding-left: 25px;
-
 }
 
-li {
-
-    margin-bottom: 6px;
-
+#skills li {
+    padding: 5px 0;
+    font-size: 16px;
 }
 
-/* =================================
+#skills li::marker {
+    color: #c18a9e;
+}
 
-   10. ส่วนท้ายเว็บไซต์ CONTACT
+/* ==============================
+   เป้าหมายในอนาคต
+================================ */
 
-================================= */
+#goal p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2;
+    padding: 10px;
+}
+
+/* ==============================
+   คติประจำใจ
+================================ */
+
+#motto {
+    background: linear-gradient(
+        135deg,
+        #fbe4ec,
+        #fff9f5
+    );
+    text-align: center;
+}
+
+#motto p {
+    font-size: 19px;
+    font-weight: bold;
+    color: #96536e;
+    line-height: 2;
+    padding: 15px;
+}
+
+/* ==============================
+   ส่วนท้ายเว็บไซต์
+================================ */
 
 footer {
-
-    background: #D63384;
-
+    background: #714b5c;
     color: white;
-
     text-align: center;
-
-    padding: 25px;
-
+    padding: 35px 15px;
     margin-top: 40px;
-
-    border-top: 5px solid #FF9FCB;
-
+    border-radius: 30px 30px 0 0;
 }
 
 footer h2 {
-
-    color: white;
-
+    color: #f5d9a5;
+    font-size: 23px;
+    margin-bottom: 15px;
 }
 
 footer p {
-
-    color: white;
-
+    font-size: 14px;
+    margin: 8px 0;
 }
 
-footer a {
-
-    color: #FFE3EF;
-
-    text-decoration: none;
-
-}
-
-footer a:hover {
-
-    text-decoration: underline;
-
-}
-
-/* =================================
-
-   11. ปุ่มและลิงก์
-
-================================= */
-
-a {
-
-    transition: 0.3s;
-
-}
-
-a:hover {
-
-    opacity: 0.8;
-
-}
-
-/* =================================
-
-   12. รองรับโทรศัพท์และแท็บเล็ต
-
-================================= */
+/* ==============================
+   RESPONSIVE - โทรศัพท์
+================================ */
 
 @media screen and (max-width: 600px) {
 
+    body {
+        font-size: 14px;
+    }
+
+    .profile-container {
+        gap: 12px;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .profile-item {
+        width: 46%;
+        padding: 8px;
+    }
+
+    .profile-item img {
+        height: 170px;
+    }
+
+    .profile-item p {
+        font-size: 12px;
+    }
+
     header {
-
-        padding: 35px 15px;
-
+        padding: 40px 15px;
     }
 
     header h1 {
-
-        font-size: 30px;
-
+        font-size: 34px;
     }
 
     header h2 {
-
-        font-size: 22px;
-
+        font-size: 19px;
     }
 
     header p {
-
-        font-size: 15px;
-
+        font-size: 13px;
     }
 
     section {
-
-        width: 92%;
-
-        padding: 20px;
-
-        margin: 20px auto;
-
+        margin: 20px 12px;
+        padding: 20px 15px;
     }
 
     section h2 {
-
-        font-size: 21px;
-
+        font-size: 19px;
     }
 
-    section h3 {
-        font-size: 17px;
-    }
-
-    section p,
-    section li {
-
-        font-size: 15px;
-
+    .profile-img {
+        width: 145px;
+        height: 180px;
     }
 
     .card {
-
         padding: 15px;
-       /* รูปโปรไฟล์ 2 คน */
+    }
 
-/* จัดรูปภาพให้อยู่ข้างกัน */
+    .card h3 {
+        font-size: 17px;
+    }
 
-.profile-container {
+    #about p,
+    #skills li,
+    #goal p {
+        font-size: 14px;
+    }
 
-    display: flex;
+    #motto p {
+        font-size: 16px;
+    }
 
-    justify-content: center;
-
-    align-items: flex-start;
-
-    gap: 40px;
-
-    flex-wrap: wrap;
-
-    text-align: center;
-
-    margin: 30px auto;
-
-}
-
-/* กล่องรูปภาพแต่ละคน */
-
-.profile-item {
-
-    width: 220px;
-
-    text-align: center;
-
-}
-
-/* ตกแต่งรูปภาพ */
-
-.profile-item img {
-
-    width: 200px;
-
-    height: 250px;
-
-    object-fit: cover;
-
-    border-radius: 15px;
-
-    border: 3px solid #c9a96e;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-
-}
-
-/* ชื่อใต้รูป */
-
-.profile-item p {
-
-    margin: 8px 0;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    color: #333;
-
+    footer {
+        padding: 25px 10px;
+    }
 }
