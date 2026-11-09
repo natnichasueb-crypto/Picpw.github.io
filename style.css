@@ -1,0 +1,405 @@
+/* =================================
+
+   1. ตั้งค่าพื้นฐานของเว็บไซต์
+
+================================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #FFF0F6;
+
+    color: #263238;
+
+}
+
+/* =================================
+
+   2. ส่วนหัวเว็บไซต์
+
+================================= */
+
+header {
+
+    background: linear-gradient(135deg, #E84393, #FF9FCB);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+
+    border-bottom: 5px solid #FFC2DC;
+
+}
+
+header h1 {
+
+    font-size: 42px;
+
+    letter-spacing: 4px;
+
+    margin: 0;
+
+    color: white;
+
+}
+
+header h2 {
+
+    font-size: 27px;
+
+    margin: 5px 0;
+
+    color: white;
+
+}
+
+header p {
+
+    font-size: 17px;
+
+    margin-top: 10px;
+
+    color: white;
+
+}
+
+/* =================================
+
+   3. กล่องเนื้อหาแต่ละส่วน
+
+================================= */
+
+section {
+
+    background-color: white;
+
+    max-width: 1000px;
+
+    width: 90%;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(214, 51, 132, 0.10);
+
+}
+
+/* =================================
+
+   4. หัวข้อหลัก
+
+   เช่น ประวัติส่วนตัว ประวัติการศึกษา
+
+   กิจกรรม ความสามารถ และเป้าหมาย
+
+================================= */
+
+section h2 {
+
+    color: #D63384;
+
+    font-size: 25px;
+
+    border-left: 5px solid #F062A5;
+
+    padding-left: 12px;
+
+    margin-top: 0;
+
+    font-weight: bold;
+
+}
+
+/* =================================
+
+   5. หัวข้อย่อย
+
+   เช่น ชื่อกิจกรรมและหัวข้อข้อมูล
+
+================================= */
+
+section h3 {
+
+    color: #E879AC;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+/* =================================
+
+   6. ข้อความอธิบาย
+
+   กำหนดให้เป็นสีดำ
+
+================================= */
+
+section p {
+
+    color: #263238;
+
+    font-size: 16px;
+
+}
+
+section li {
+
+    color: #263238;
+
+    font-size: 16px;
+
+}
+
+section strong {
+
+    color: #263238;
+
+}
+
+/* =================================
+
+   7. การ์ดกิจกรรมและผลงาน
+
+================================= */
+
+.card {
+
+    background-color: #FFF7FA;
+
+    padding: 20px;
+
+    margin: 18px 0;
+
+    border-radius: 12px;
+
+    border: 1px solid #F8D5E5;
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.12);
+
+}
+
+/* ชื่อกิจกรรม */
+
+.card h3 {
+
+    color: #E879AC;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+}
+
+/* คำอธิบายกิจกรรม */
+
+.card p {
+
+    color: #263238;
+
+    font-size: 16px;
+
+}
+
+/* =================================
+
+   8. รูปภาพในเว็บไซต์
+
+================================= */
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    margin: 12px auto;
+
+}
+
+/* =================================
+
+   9. รายการข้อมูล
+
+================================= */
+
+ul {
+
+    padding-left: 25px;
+
+}
+
+li {
+
+    margin-bottom: 6px;
+
+}
+
+/* =================================
+
+   10. ส่วนท้ายเว็บไซต์ CONTACT
+
+================================= */
+
+footer {
+
+    background: #D63384;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    border-top: 5px solid #FF9FCB;
+
+}
+
+footer h2 {
+
+    color: white;
+
+}
+
+footer p {
+
+    color: white;
+
+}
+
+footer a {
+
+    color: #FFE3EF;
+
+    text-decoration: none;
+
+}
+
+footer a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* =================================
+
+   11. ปุ่มและลิงก์
+
+================================= */
+
+a {
+
+    transition: 0.3s;
+
+}
+
+a:hover {
+
+    opacity: 0.8;
+
+}
+
+/* =================================
+
+   12. รองรับโทรศัพท์และแท็บเล็ต
+
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    header {
+
+        padding: 35px 15px;
+
+    }
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+    header h2 {
+
+        font-size: 22px;
+
+    }
+
+    header p {
+
+        font-size: 15px;
+
+    }
+
+    section {
+
+        width: 92%;
+
+        padding: 20px;
+
+        margin: 20px auto;
+
+    }
+
+    section h2 {
+
+        font-size: 21px;
+
+    }
+
+    section h3 {
+
+        font-size: 17px;
+
+    }
+
+    section p,
+
+    section li {
+
+        font-size: 15px;
+
+    }
+
+    .card {
+
+        padding: 15px;
+
+    }
+
+}
