@@ -398,94 +398,64 @@ a:hover {
         padding: 15px;
        /* รูปโปรไฟล์ 2 คน */
 
+/* จัดรูปภาพให้อยู่ข้างกัน */
+
 .profile-container {
 
     display: flex;
 
     justify-content: center;
 
-    align-items: center;
+    align-items: flex-start;
 
-    gap: 35px;
+    gap: 40px;
 
     flex-wrap: wrap;
 
+    text-align: center;
+
     margin: 30px auto;
 
-    max-width: 800px;
-
 }
+
+/* กล่องรูปภาพแต่ละคน */
 
 .profile-item {
 
-    text-align: center;
-
-    background-color: white;
-
-    padding: 20px;
-
-    border-radius: 18px;
-
-    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.12);
-
     width: 220px;
+
+    text-align: center;
 
 }
 
+/* ตกแต่งรูปภาพ */
+
 .profile-item img {
 
-    width: 170px;
+    width: 200px;
 
-    height: 200px;
+    height: 250px;
 
     object-fit: cover;
 
     border-radius: 15px;
 
-    border: 4px solid #FFB6D5;
+    border: 3px solid #c9a96e;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 
 }
 
-.profile-item h3 {
+/* ชื่อใต้รูป */
 
-    color: #D63384;
+.profile-item p {
 
-    font-size: 18px;
+    margin: 8px 0;
 
-    margin-bottom: 0;
+    font-size: 16px;
 
-}
+    font-weight: bold;
 
-/* รองรับโทรศัพท์ */
-
-@media screen and (max-width: 600px) {
-
-    .profile-container {
-
-        gap: 15px;
-
-    }
-
-    .profile-item {
-
-        width: 45%;
-
-        min-width: 140px;
-
-        padding: 10px;
-
-    }
-
-    .profile-item img {
-
-        width: 100%;
-
-        height: 160px;
-
-    }
-
-}
-
-    }
+    color: #333;
 
 }
